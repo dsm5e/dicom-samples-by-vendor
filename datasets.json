@@ -1,0 +1,1566 @@
+{
+  "schema_version": "1.0.0",
+  "name": "dicom-samples-by-vendor",
+  "checked_on": "2026-11-10",
+  "index_license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "scope": "Index text and original catalogue descriptions only. External datasets, software and source text keep their own terms."
+  },
+  "verification_scope": "Web searches plus opened publisher pages, repositories, papers and text metadata. Source-verified does not mean binary-tested, independently de-identified, or licensed for every use. No image files or vendor installers were downloaded.",
+  "counts": {
+    "datasets": 17,
+    "dental_cbct": 2,
+    "ct": 3,
+    "mri": 6,
+    "transfer_syntax": 4,
+    "nifti": 2,
+    "candidates": 5
+  },
+  "datasets": [
+    {
+      "id": "dental-missing-teeth",
+      "title": "Adult dental CBCT: missing teeth, version 2",
+      "category": "dental_cbct",
+      "modalities": [
+        "CBCT"
+      ],
+      "format": "DICOM",
+      "source_url": "https://www.scidb.cn/detail?dataSetId=7524d88b52574de28477eb341eb33ee4",
+      "content": "158 CBCT volumes (59,978 slices), with JSON annotations for 85 subjects; DICOM data arranged by scanner.",
+      "vendors": [
+        {
+          "name": "NewTom",
+          "models": [
+            "VGi"
+          ],
+          "role": "scanner"
+        },
+        {
+          "name": "KaVo",
+          "models": [
+            "OP 3D Vision V17"
+          ],
+          "role": "scanner"
+        },
+        {
+          "name": "Meyer",
+          "models": [
+            "SS-X9010DPro"
+          ],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "23,534,221,851 bytes",
+        "bytes": 23534221851,
+        "basis": "publisher_metadata",
+        "scope": "Dataset_repaired.zip only; excludes code and previews",
+        "source_url": "https://www.scidb.cn/detail?dataSetId=7524d88b52574de28477eb341eb33ee4"
+      },
+      "licenses": [
+        {
+          "name": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+          "source_url": "https://www.nature.com/articles/s41597-026-07156-9",
+          "scope": "dataset",
+          "notes": null
+        }
+      ],
+      "access": {
+        "registration_required": null,
+        "description": "Download registration not confirmed. Repository metadata says PUBLIC; landing page is accessible without login.",
+        "source_url": "https://www.scidb.cn/detail?dataSetId=7524d88b52574de28477eb341eb33ee4",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_deidentification",
+        "description": "Paper reports removal of identifying information and participant consent.",
+        "source_url": "https://www.nature.com/articles/s41597-026-07156-9",
+        "independently_audited": false
+      },
+      "notes": [
+        "DOI: 10.57760/sciencedb.26465. Version 2 repairs the ZIP archive.",
+        "KaVo acquisition is stated; an i-CAT model is not established."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "\"sciencedb.26465\""
+        ],
+        "opened_urls": [
+          "https://doi.org/10.57760/sciencedb.26465",
+          "https://www.scidb.cn/detail?dataSetId=7524d88b52574de28477eb341eb33ee4",
+          "https://www.nature.com/articles/s41597-026-07156-9",
+          "https://www.scidb.cn/en/about/terms"
+        ],
+        "methods": [
+          "web_search",
+          "https_html"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "dental-physionet",
+      "title": "Multimodal dental dataset, version 1.1.0",
+      "category": "dental_cbct",
+      "modalities": [
+        "CBCT",
+        "panoramic radiography",
+        "synthetic periapical"
+      ],
+      "format": "DICOM; TIFF for synthetic periapical images",
+      "source_url": "https://physionet.org/content/multimodal-dental-dataset/1.1.0/",
+      "content": "329 CBCT volumes from 169 patients, 8 panoramic DICOM images and 16,203 synthetic periapical TIFF images.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "not stated",
+        "bytes": null,
+        "basis": "not_stated",
+        "scope": null,
+        "source_url": null
+      },
+      "licenses": [
+        {
+          "name": "PhysioNet Contributor Review Health Data License 1.5.0",
+          "source_url": "https://physionet.org/content/multimodal-dental-dataset/view-license/1.1.0/",
+          "scope": "dataset",
+          "notes": "Lawful scientific research only; no sharing of restricted data."
+        }
+      ],
+      "access": {
+        "registration_required": true,
+        "description": "Credentialed account, required training, signed data use agreement and contributor approval of the proposed study.",
+        "source_url": "https://physionet.org/content/multimodal-dental-dataset/1.1.0/",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_deidentification",
+        "description": "Source reports removed or replaced identifiers and randomized dates.",
+        "source_url": "https://physionet.org/content/multimodal-dental-dataset/1.1.0/",
+        "independently_audited": false
+      },
+      "notes": [
+        "Restricted research access; not an anonymous sample download."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "PhysioNet multimodal dental dataset"
+        ],
+        "opened_urls": [
+          "https://physionet.org/content/multimodal-dental-dataset/1.1.0/",
+          "https://physionet.org/content/multimodal-dental-dataset/view-license/1.1.0/"
+        ],
+        "methods": [
+          "web_search",
+          "web_open"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "ct-credence-phantom",
+      "title": "Credence Cartridge Radiomics Phantom",
+      "category": "ct",
+      "modalities": [
+        "CT",
+        "RTSTRUCT"
+      ],
+      "format": "DICOM",
+      "source_url": "https://www.cancerimagingarchive.net/collection/cc-radiomics-phantom/",
+      "content": "17 phantom scans: GE 7, Philips 5, Siemens 2, Toshiba 3; 51 series and 2,672 images, including CT and RTSTRUCT.",
+      "vendors": [
+        {
+          "name": "GE",
+          "models": [],
+          "role": "scanner"
+        },
+        {
+          "name": "Philips",
+          "models": [],
+          "role": "scanner"
+        },
+        {
+          "name": "Siemens",
+          "models": [],
+          "role": "scanner"
+        },
+        {
+          "name": "Toshiba",
+          "models": [],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "1.43 GB",
+        "bytes": null,
+        "basis": "publisher",
+        "scope": "whole collection",
+        "source_url": "https://www.cancerimagingarchive.net/collection/cc-radiomics-phantom/"
+      },
+      "licenses": [
+        {
+          "name": "CC BY 3.0",
+          "source_url": "https://www.cancerimagingarchive.net/collection/cc-radiomics-phantom/",
+          "scope": "dataset",
+          "notes": "Follow the collection citation and TCIA data usage requirements."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public collection; TCIA Data Retriever is needed for the manifest workflow. No account indicated for public access.",
+        "source_url": "https://www.cancerimagingarchive.net/collection/cc-radiomics-phantom/",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "physical_phantom",
+        "description": "Physical test phantom.",
+        "source_url": "https://www.cancerimagingarchive.net/collection/cc-radiomics-phantom/",
+        "independently_audited": false
+      },
+      "notes": [
+        "Data citation DOI: 10.7937/K9/TCIA.2017.zuzrml5b.",
+        "Source says Toshiba; no Canon-branded scanner model is inferred."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "site:cancerimagingarchive.net phantom CT Siemens GE Philips Toshiba"
+        ],
+        "opened_urls": [
+          "https://www.cancerimagingarchive.net/collection/cc-radiomics-phantom/",
+          "https://wiki.cancerimagingarchive.net/display/Public/Data%2BUsage%2BPolicies%2Band%2BRestrictions"
+        ],
+        "methods": [
+          "web_search",
+          "https_html",
+          "web_open"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "ct-philips-gantry",
+      "title": "dcm_qa_ct",
+      "category": "ct",
+      "modalities": [
+        "CT"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/neurolabusc/dcm_qa_ct",
+      "content": "Phantom CT with varying gantry tilt; index scope is In/Philips/ only.",
+      "vendors": [
+        {
+          "name": "Philips",
+          "models": [
+            "Ingenuity"
+          ],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "232,950,916 bytes",
+        "bytes": 232950916,
+        "basis": "repository_manifest",
+        "scope": "In/Philips/ subtree, including DICOMDIR and directory records",
+        "source_url": "https://api.github.com/repos/neurolabusc/dcm_qa_ct/git/trees/642cc07925fc2b3a6925f8c0aa79856ca50770fa?recursive=1",
+        "tree_sha": "642cc07925fc2b3a6925f8c0aa79856ca50770fa",
+        "file_count": 445
+      },
+      "licenses": [
+        {
+          "name": "BSD 2-Clause License",
+          "source_url": "https://github.com/neurolabusc/dcm_qa_ct/blob/master/LICENSE",
+          "scope": "repository",
+          "notes": null
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_ct",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "physical_phantom",
+        "description": "Only the Philips phantom subset is indexed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_ct",
+        "independently_audited": false
+      },
+      "notes": [
+        "The repository also contains a GE human scan; that scan is outside this entry's scope."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "dcm_qa_ct"
+        ],
+        "opened_urls": [
+          "https://github.com/neurolabusc/dcm_qa_ct",
+          "https://github.com/neurolabusc/dcm_qa_ct/blob/master/LICENSE",
+          "https://api.github.com/repos/neurolabusc/dcm_qa_ct/git/trees/642cc07925fc2b3a6925f8c0aa79856ca50770fa?recursive=1"
+        ],
+        "methods": [
+          "web_search",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "mri-siemens-xa30",
+      "title": "dcm_qa_xa30",
+      "category": "mri",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/neurolabusc/dcm_qa_xa30",
+      "content": "MR XA30 enhanced DICOM: structural, functional, diffusion, ASL and field-map tests.",
+      "vendors": [
+        {
+          "name": "Siemens",
+          "models": [
+            "Prisma Fit"
+          ],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "66,924,708 bytes",
+        "bytes": 66924708,
+        "basis": "repository_manifest",
+        "scope": "In/ DICOM files only; excludes TXT, PDF, XLSX and CSV sidecars",
+        "source_url": "https://api.github.com/repos/neurolabusc/dcm_qa_xa30/git/trees/371ab3071aa9270d23b99fca5f83fe0c35932182?recursive=1",
+        "tree_sha": "371ab3071aa9270d23b99fca5f83fe0c35932182",
+        "file_count": 95
+      },
+      "licenses": [
+        {
+          "name": "BSD 2-Clause License",
+          "source_url": "https://github.com/neurolabusc/dcm_qa_xa30/blob/main/LICENSE",
+          "scope": "repository",
+          "notes": null
+        },
+        {
+          "name": "CC BY 4.0",
+          "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+          "scope": "image reuse",
+          "notes": "Companion paper states this dual-license option."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_xa30",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_research_release",
+        "description": "Collection paper describes phantom data and volunteer scans released with participants' knowledge; de-identification practices vary.",
+        "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+        "independently_audited": false
+      },
+      "notes": [
+        "Enhanced multi-frame is an object organization, not a transfer syntax."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "dcm_qa_xa30"
+        ],
+        "opened_urls": [
+          "https://github.com/neurolabusc/dcm_qa_xa30",
+          "https://github.com/neurolabusc/dcm_qa_xa30/blob/main/LICENSE",
+          "https://api.github.com/repos/neurolabusc/dcm_qa_xa30/git/trees/371ab3071aa9270d23b99fca5f83fe0c35932182?recursive=1",
+          "https://www.nature.com/articles/s41597-025-05503-w"
+        ],
+        "methods": [
+          "web_search",
+          "github_api",
+          "https_html"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "mri-ge",
+      "title": "dcm_qa_ge",
+      "category": "mri",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/neurolabusc/dcm_qa_ge",
+      "content": "Diffusion MRI and functional MRI conversion tests, including acceleration and slice timing.",
+      "vendors": [
+        {
+          "name": "GE",
+          "models": [
+            "SIGNA Pioneer",
+            "SIGNA Architect"
+          ],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "148,990,852 bytes",
+        "bytes": 148990852,
+        "basis": "repository_manifest",
+        "scope": "In/ DICOM files only; excludes TXT, PDF, XLSX and CSV sidecars",
+        "source_url": "https://api.github.com/repos/neurolabusc/dcm_qa_ge/git/trees/e92133ae414e2b23e8c4d07a4030ab4dbb41518e?recursive=1",
+        "tree_sha": "e92133ae414e2b23e8c4d07a4030ab4dbb41518e",
+        "file_count": 4360
+      },
+      "licenses": [
+        {
+          "name": "BSD 2-Clause License",
+          "source_url": "https://github.com/neurolabusc/dcm_qa_ge/blob/master/LICENSE",
+          "scope": "repository",
+          "notes": null
+        },
+        {
+          "name": "CC BY 4.0",
+          "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+          "scope": "image reuse",
+          "notes": "Companion paper states this dual-license option."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_ge",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_research_release",
+        "description": "Collection paper describes phantom data and volunteer scans released with participants' knowledge; de-identification practices vary.",
+        "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+        "independently_audited": false
+      },
+      "notes": [],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "dcm_qa_ge"
+        ],
+        "opened_urls": [
+          "https://github.com/neurolabusc/dcm_qa_ge",
+          "https://github.com/neurolabusc/dcm_qa_ge/blob/master/LICENSE",
+          "https://api.github.com/repos/neurolabusc/dcm_qa_ge/git/trees/e92133ae414e2b23e8c4d07a4030ab4dbb41518e?recursive=1",
+          "https://www.nature.com/articles/s41597-025-05503-w"
+        ],
+        "methods": [
+          "web_search",
+          "github_api",
+          "https_html"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "mri-philips-enhanced",
+      "title": "dcm_qa_philips_enh",
+      "category": "mri",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/neurolabusc/dcm_qa_philips_enh",
+      "content": "Matching classic and enhanced MRI exports: structural, ASL, field maps, functional MRI and diffusion.",
+      "vendors": [
+        {
+          "name": "Philips",
+          "models": [
+            "Ingenia Elition X"
+          ],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "151,462,108 bytes",
+        "bytes": 151462108,
+        "basis": "repository_manifest",
+        "scope": "In/ DICOM files only; excludes TXT, PDF, XLSX and CSV sidecars",
+        "source_url": "https://api.github.com/repos/neurolabusc/dcm_qa_philips_enh/git/trees/31426f16861bab6af7b23d15638a190749041a3e?recursive=1",
+        "tree_sha": "31426f16861bab6af7b23d15638a190749041a3e",
+        "file_count": 7370
+      },
+      "licenses": [
+        {
+          "name": "BSD 2-Clause License",
+          "source_url": "https://github.com/neurolabusc/dcm_qa_philips_enh/blob/main/LICENSE",
+          "scope": "repository",
+          "notes": null
+        },
+        {
+          "name": "CC BY 4.0",
+          "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+          "scope": "image reuse",
+          "notes": "Companion paper states this dual-license option."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_philips_enh",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_research_release",
+        "description": "Collection paper describes phantom data and volunteer scans released with participants' knowledge; de-identification practices vary.",
+        "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+        "independently_audited": false
+      },
+      "notes": [
+        "Files are .dcm.gz; gzip is a file wrapper, not the DICOM transfer syntax.",
+        "Enhanced multi-frame coverage."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "dcm_qa_philips_enh"
+        ],
+        "opened_urls": [
+          "https://github.com/neurolabusc/dcm_qa_philips_enh",
+          "https://github.com/neurolabusc/dcm_qa_philips_enh/blob/main/LICENSE",
+          "https://api.github.com/repos/neurolabusc/dcm_qa_philips_enh/git/trees/31426f16861bab6af7b23d15638a190749041a3e?recursive=1",
+          "https://www.nature.com/articles/s41597-025-05503-w"
+        ],
+        "methods": [
+          "web_search",
+          "github_api",
+          "https_html"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "mri-canon",
+      "title": "dcm_qa_canon",
+      "category": "mri",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/neurolabusc/dcm_qa_canon",
+      "content": "Classic MRI diffusion-direction and angulation tests; software V6.0SP2000.",
+      "vendors": [
+        {
+          "name": "Canon",
+          "models": [
+            "Galan3T"
+          ],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "89,375,242 bytes",
+        "bytes": 89375242,
+        "basis": "repository_manifest",
+        "scope": "In/ DICOM files only; excludes TXT, PDF, XLSX and CSV sidecars",
+        "source_url": "https://api.github.com/repos/neurolabusc/dcm_qa_canon/git/trees/1dc19c806d0347e9eb41db2edeb2db51365b5304?recursive=1",
+        "tree_sha": "1dc19c806d0347e9eb41db2edeb2db51365b5304",
+        "file_count": 5720
+      },
+      "licenses": [
+        {
+          "name": "BSD 2-Clause License",
+          "source_url": "https://github.com/neurolabusc/dcm_qa_canon/blob/master/LICENSE",
+          "scope": "repository",
+          "notes": null
+        },
+        {
+          "name": "CC BY 4.0",
+          "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+          "scope": "image reuse",
+          "notes": "Companion paper states this dual-license option."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_canon",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_research_release",
+        "description": "Collection paper describes phantom data and volunteer scans released with participants' knowledge; de-identification practices vary.",
+        "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+        "independently_audited": false
+      },
+      "notes": [
+        "Source documents an AP diffusion-gradient orientation limitation involving missing phase-encoding polarity."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "dcm_qa_canon"
+        ],
+        "opened_urls": [
+          "https://github.com/neurolabusc/dcm_qa_canon",
+          "https://github.com/neurolabusc/dcm_qa_canon/blob/master/LICENSE",
+          "https://api.github.com/repos/neurolabusc/dcm_qa_canon/git/trees/1dc19c806d0347e9eb41db2edeb2db51365b5304?recursive=1",
+          "https://www.nature.com/articles/s41597-025-05503-w"
+        ],
+        "methods": [
+          "web_search",
+          "github_api",
+          "https_html"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "mri-united-imaging",
+      "title": "dcm_qa_uih",
+      "category": "mri",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/neurolabusc/dcm_qa_uih",
+      "content": "Structural and diffusion MRI conversion tests; scanner model not stated.",
+      "vendors": [
+        {
+          "name": "United Imaging Healthcare",
+          "models": [],
+          "role": "scanner"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "not_stated",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "169,352,118 bytes",
+        "bytes": 169352118,
+        "basis": "repository_manifest",
+        "scope": "In/ DICOM files only; excludes TXT, PDF, XLSX and CSV sidecars",
+        "source_url": "https://api.github.com/repos/neurolabusc/dcm_qa_uih/git/trees/f3bd991a98eaf49a6f928f276a41f666d658a64b?recursive=1",
+        "tree_sha": "f3bd991a98eaf49a6f928f276a41f666d658a64b",
+        "file_count": 388
+      },
+      "licenses": [
+        {
+          "name": "BSD 2-Clause License",
+          "source_url": "https://github.com/neurolabusc/dcm_qa_uih/blob/master/LICENSE",
+          "scope": "repository",
+          "notes": null
+        },
+        {
+          "name": "CC BY 4.0",
+          "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+          "scope": "image reuse",
+          "notes": "Companion paper states this dual-license option."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/neurolabusc/dcm_qa_uih",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "publisher_research_release",
+        "description": "Collection paper describes phantom data and volunteer scans released with participants' knowledge; de-identification practices vary.",
+        "source_url": "https://www.nature.com/articles/s41597-025-05503-w",
+        "independently_audited": false
+      },
+      "notes": [],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "dcm_qa_uih"
+        ],
+        "opened_urls": [
+          "https://github.com/neurolabusc/dcm_qa_uih",
+          "https://github.com/neurolabusc/dcm_qa_uih/blob/master/LICENSE",
+          "https://api.github.com/repos/neurolabusc/dcm_qa_uih/git/trees/f3bd991a98eaf49a6f928f276a41f666d658a64b?recursive=1",
+          "https://www.nature.com/articles/s41597-025-05503-w"
+        ],
+        "methods": [
+          "web_search",
+          "github_api",
+          "https_html"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "synthetic-ct",
+      "title": "CT-01 synthetic chest",
+      "category": "ct",
+      "modalities": [
+        "CT"
+      ],
+      "format": "DICOM",
+      "source_url": "https://www.charruasoft.com/dicom-samples/",
+      "content": "40 axial slices of a mathematical torso phantom, 512 × 512.",
+      "vendors": [
+        {
+          "name": "CharruaSoft",
+          "models": [],
+          "role": "software"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "stated",
+        "values": [
+          {
+            "name": "Explicit VR Little Endian",
+            "uid": "1.2.840.10008.1.2.1"
+          }
+        ],
+        "source_url": "https://www.charruasoft.com/dicom-samples/",
+        "uid_reference_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+      },
+      "size": {
+        "display": "20.1 MB",
+        "bytes": null,
+        "basis": "publisher",
+        "scope": "selected sample",
+        "source_url": "https://www.charruasoft.com/dicom-samples/"
+      },
+      "licenses": [
+        {
+          "name": "CC0 1.0",
+          "source_url": "https://www.charruasoft.com/dicom-samples/",
+          "scope": "dataset",
+          "notes": null
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public sample download links; no account requested.",
+        "source_url": "https://www.charruasoft.com/dicom-samples/",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "synthetic",
+        "description": "Publisher says synthetic files contain no patient data.",
+        "source_url": "https://www.charruasoft.com/dicom-samples/",
+        "independently_audited": false
+      },
+      "notes": [
+        "Software-generated phantom; no scanner manufacturer."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "CharruaSoft free DICOM sample files"
+        ],
+        "opened_urls": [
+          "https://www.charruasoft.com/dicom-samples/",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+        ],
+        "methods": [
+          "web_search",
+          "page_open",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "synthetic-mr",
+      "title": "MR-01 synthetic brain",
+      "category": "mri",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://www.charruasoft.com/dicom-samples/",
+      "content": "Two 20-slice T1/T2 phantom series, 256 × 256.",
+      "vendors": [
+        {
+          "name": "CharruaSoft",
+          "models": [],
+          "role": "software"
+        }
+      ],
+      "transfer_syntax": {
+        "status": "stated",
+        "values": [
+          {
+            "name": "Explicit VR Little Endian",
+            "uid": "1.2.840.10008.1.2.1"
+          }
+        ],
+        "source_url": "https://www.charruasoft.com/dicom-samples/",
+        "uid_reference_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+      },
+      "size": {
+        "display": "5.1 MB",
+        "bytes": null,
+        "basis": "publisher",
+        "scope": "selected sample",
+        "source_url": "https://www.charruasoft.com/dicom-samples/"
+      },
+      "licenses": [
+        {
+          "name": "CC0 1.0",
+          "source_url": "https://www.charruasoft.com/dicom-samples/",
+          "scope": "dataset",
+          "notes": null
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public sample download links; no account requested.",
+        "source_url": "https://www.charruasoft.com/dicom-samples/",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "synthetic",
+        "description": "Publisher says synthetic files contain no patient data.",
+        "source_url": "https://www.charruasoft.com/dicom-samples/",
+        "independently_audited": false
+      },
+      "notes": [
+        "Software-generated phantom; no scanner manufacturer."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "CharruaSoft free DICOM sample files"
+        ],
+        "opened_urls": [
+          "https://www.charruasoft.com/dicom-samples/",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+        ],
+        "methods": [
+          "web_search",
+          "page_open",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "syntax-jpeg2000",
+      "title": "JPEG 2000 lossless",
+      "category": "transfer_syntax",
+      "modalities": [
+        "MR"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+      "content": "One 64 × 64 MR decoder fixture, derived from the small NEMA-based MR test image.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "stated",
+        "values": [
+          {
+            "name": "JPEG 2000 Image Compression (Lossless Only)",
+            "uid": "1.2.840.10008.1.2.4.90"
+          }
+        ],
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+        "uid_reference_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+      },
+      "size": {
+        "display": "6,008 bytes",
+        "bytes": 6008,
+        "basis": "repository_manifest",
+        "scope": "sum of selected fixture files",
+        "source_url": "https://api.github.com/repos/pydicom/pydicom/git/trees/668693023595b7e4976b115094bcbb0a86ea2c6a?recursive=1",
+        "tree_sha": "668693023595b7e4976b115094bcbb0a86ea2c6a",
+        "file_count": 1
+      },
+      "licenses": [
+        {
+          "name": "MIT License",
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/LICENSE",
+          "scope": "repository",
+          "notes": "Per-file upstream notices remain relevant; repository licensing is not an independent clearance of source images."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "published_test_fixture",
+        "description": "Maintainer describes downsized test images and replacement of patient-like names in some files; no per-file privacy audit stated.",
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/README.txt",
+        "independently_audited": false
+      },
+      "notes": [
+        "These are decoder fixtures, not complete clinical studies."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "\"MR_small_jp2klossless.dcm\""
+        ],
+        "opened_urls": [
+          "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+          "https://github.com/pydicom/pydicom/blob/main/LICENSE",
+          "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/README.txt",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+        ],
+        "methods": [
+          "web_search",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      },
+      "files": [
+        {
+          "name": "MR_small_jp2klossless.dcm",
+          "bytes": 6008,
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/MR_small_jp2klossless.dcm"
+        }
+      ]
+    },
+    {
+      "id": "syntax-htj2k",
+      "title": "HTJ2K",
+      "category": "transfer_syntax",
+      "modalities": [],
+      "format": "DICOM",
+      "source_url": "https://github.com/pydicom/pydicom-data/tree/master/data_store/data",
+      "content": "Two 480 × 640 RGB decoder fixtures; clinical modality and scanner not stated.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "stated",
+        "values": [
+          {
+            "name": "High-Throughput JPEG 2000 Image Compression (Lossless Only)",
+            "uid": "1.2.840.10008.1.2.4.201"
+          },
+          {
+            "name": "High-Throughput JPEG 2000 Image Compression",
+            "uid": "1.2.840.10008.1.2.4.203"
+          }
+        ],
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+        "uid_reference_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+      },
+      "size": {
+        "display": "628,842 bytes",
+        "bytes": 628842,
+        "basis": "repository_manifest",
+        "scope": "sum of selected fixture files",
+        "source_url": "https://api.github.com/repos/pydicom/pydicom-data/git/trees/abc42b90985fb6cf385aa4af766d2c9c94a257a4?recursive=1",
+        "tree_sha": "abc42b90985fb6cf385aa4af766d2c9c94a257a4",
+        "file_count": 2
+      },
+      "licenses": [
+        {
+          "name": "MIT License",
+          "source_url": "https://github.com/pydicom/pydicom-data/blob/master/LICENSE",
+          "scope": "repository",
+          "notes": "Per-file upstream notices remain relevant; repository licensing is not an independent clearance of source images."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/pydicom/pydicom-data/tree/master/data_store/data",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "published_test_fixture",
+        "description": "Maintainer-published codec fixtures; no per-file de-identification statement found.",
+        "source_url": "https://github.com/pydicom/pydicom-data/pull/10",
+        "independently_audited": false
+      },
+      "notes": [
+        "These are decoder fixtures, not complete clinical studies."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "\"HTJ2KLossless_08_RGB.dcm\""
+        ],
+        "opened_urls": [
+          "https://github.com/pydicom/pydicom-data/tree/master/data_store/data",
+          "https://github.com/pydicom/pydicom-data/blob/master/LICENSE",
+          "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+          "https://github.com/pydicom/pydicom-data/pull/10",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+        ],
+        "methods": [
+          "web_search",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      },
+      "files": [
+        {
+          "name": "HTJ2KLossless_08_RGB.dcm",
+          "bytes": 393228,
+          "source_url": "https://github.com/pydicom/pydicom-data/blob/master/data_store/data/HTJ2KLossless_08_RGB.dcm"
+        },
+        {
+          "name": "HTJ2K_08_RGB.dcm",
+          "bytes": 235614,
+          "source_url": "https://github.com/pydicom/pydicom-data/blob/master/data_store/data/HTJ2K_08_RGB.dcm"
+        }
+      ]
+    },
+    {
+      "id": "syntax-jpegls",
+      "title": "JPEG-LS near-lossless",
+      "category": "transfer_syntax",
+      "modalities": [
+        "synthetic test pattern"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+      "content": "100 × 100 RGB secondary-capture color patterns with line and sample interleave.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "stated",
+        "values": [
+          {
+            "name": "JPEG-LS Lossy (Near-Lossless) Image Compression",
+            "uid": "1.2.840.10008.1.2.4.81"
+          }
+        ],
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+        "uid_reference_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+      },
+      "size": {
+        "display": "2,222 bytes",
+        "bytes": 2222,
+        "basis": "repository_manifest",
+        "scope": "sum of selected fixture files",
+        "source_url": "https://api.github.com/repos/pydicom/pydicom/git/trees/668693023595b7e4976b115094bcbb0a86ea2c6a?recursive=1",
+        "tree_sha": "668693023595b7e4976b115094bcbb0a86ea2c6a",
+        "file_count": 2
+      },
+      "licenses": [
+        {
+          "name": "MIT License",
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/LICENSE",
+          "scope": "repository",
+          "notes": "Per-file upstream notices remain relevant; repository licensing is not an independent clearance of source images."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "published_test_fixture",
+        "description": "Synthetic color patterns documented by maintainer pixel assertions.",
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/README.txt",
+        "independently_audited": false
+      },
+      "notes": [
+        "These are decoder fixtures, not complete clinical studies."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "\"SC_rgb_jls_lossy_line.dcm\""
+        ],
+        "opened_urls": [
+          "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+          "https://github.com/pydicom/pydicom/blob/main/LICENSE",
+          "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/README.txt",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+        ],
+        "methods": [
+          "web_search",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      },
+      "files": [
+        {
+          "name": "SC_rgb_jls_lossy_line.dcm",
+          "bytes": 1100,
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/SC_rgb_jls_lossy_line.dcm"
+        },
+        {
+          "name": "SC_rgb_jls_lossy_sample.dcm",
+          "bytes": 1122,
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/SC_rgb_jls_lossy_sample.dcm"
+        }
+      ]
+    },
+    {
+      "id": "syntax-rle",
+      "title": "RLE lossless",
+      "category": "transfer_syntax",
+      "modalities": [
+        "synthetic test pattern"
+      ],
+      "format": "DICOM",
+      "source_url": "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+      "content": "100 × 100 RGB secondary-capture color patterns, one- and two-frame variants.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "stated",
+        "values": [
+          {
+            "name": "RLE Lossless",
+            "uid": "1.2.840.10008.1.2.5"
+          }
+        ],
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+        "uid_reference_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+      },
+      "size": {
+        "display": "4,702 bytes",
+        "bytes": 4702,
+        "basis": "repository_manifest",
+        "scope": "sum of selected fixture files",
+        "source_url": "https://api.github.com/repos/pydicom/pydicom/git/trees/668693023595b7e4976b115094bcbb0a86ea2c6a?recursive=1",
+        "tree_sha": "668693023595b7e4976b115094bcbb0a86ea2c6a",
+        "file_count": 2
+      },
+      "licenses": [
+        {
+          "name": "MIT License",
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/LICENSE",
+          "scope": "repository",
+          "notes": "Per-file upstream notices remain relevant; repository licensing is not an independent clearance of source images."
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public GitHub files; no registration needed.",
+        "source_url": "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "published_test_fixture",
+        "description": "Synthetic color patterns documented by maintainer pixel assertions.",
+        "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/README.txt",
+        "independently_audited": false
+      },
+      "notes": [
+        "These are decoder fixtures, not complete clinical studies."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "\"SC_rgb_rle.dcm\""
+        ],
+        "opened_urls": [
+          "https://github.com/pydicom/pydicom/tree/main/src/pydicom/data/test_files",
+          "https://github.com/pydicom/pydicom/blob/main/LICENSE",
+          "https://github.com/pydicom/pydicom/blob/main/tests/pixels/pixels_reference.py",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/README.txt",
+          "https://github.com/pydicom/pydicom/blob/main/src/pydicom/_uid_dict.py"
+        ],
+        "methods": [
+          "web_search",
+          "github_api"
+        ],
+        "image_files_downloaded": false
+      },
+      "files": [
+        {
+          "name": "SC_rgb_rle.dcm",
+          "bytes": 2006,
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/SC_rgb_rle.dcm"
+        },
+        {
+          "name": "SC_rgb_rle_2frame.dcm",
+          "bytes": 2696,
+          "source_url": "https://github.com/pydicom/pydicom/blob/main/src/pydicom/data/test_files/SC_rgb_rle_2frame.dcm"
+        }
+      ]
+    },
+    {
+      "id": "nifti-minimal",
+      "title": "Minimal NIfTI-1 ramp",
+      "category": "nifti",
+      "modalities": [
+        "synthetic test pattern"
+      ],
+      "format": "NIfTI-1",
+      "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+      "content": "Synthetic minimal image with a ramp along Y; single .nii or paired .hdr/.img files.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "not_applicable",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "not stated",
+        "bytes": null,
+        "basis": "not_stated",
+        "scope": null,
+        "source_url": null
+      },
+      "licenses": [
+        {
+          "name": "terms not stated",
+          "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+          "scope": "dataset",
+          "notes": null
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public file links; no registration requested.",
+        "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "synthetic",
+        "description": "Numerical test pattern.",
+        "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+        "independently_audited": false
+      },
+      "notes": [
+        "Byte sizes and sample-specific reuse terms are not stated on this page."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "NIfTI-1 Test Data Sets minimal MNI152"
+        ],
+        "opened_urls": [
+          "https://nifti.nimh.nih.gov/nifti-1/data/"
+        ],
+        "methods": [
+          "web_search",
+          "page_open"
+        ],
+        "image_files_downloaded": false
+      }
+    },
+    {
+      "id": "nifti-mni152",
+      "title": "MNI152 LR/RL reference images",
+      "category": "nifti",
+      "modalities": [
+        "MR-derived atlas"
+      ],
+      "format": "NIfTI-1",
+      "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+      "content": "Two averaged T1 atlas references, 91 × 109 × 91 at 2 mm; .nii.gz or paired .hdr.gz/.img.gz.",
+      "vendors": [],
+      "transfer_syntax": {
+        "status": "not_applicable",
+        "values": [],
+        "source_url": null
+      },
+      "size": {
+        "display": "not stated",
+        "bytes": null,
+        "basis": "not_stated",
+        "scope": null,
+        "source_url": null
+      },
+      "licenses": [
+        {
+          "name": "terms not stated",
+          "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+          "scope": "dataset",
+          "notes": null
+        }
+      ],
+      "access": {
+        "registration_required": false,
+        "description": "Public file links; no registration requested.",
+        "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+        "download_tested": false
+      },
+      "privacy": {
+        "basis": "averaged_atlas",
+        "description": "Averaged standard-space atlas rather than an individual patient study.",
+        "source_url": "https://nifti.nimh.nih.gov/nifti-1/data/",
+        "independently_audited": false
+      },
+      "notes": [
+        "Byte sizes and sample-specific reuse terms are not stated on this page."
+      ],
+      "verification": {
+        "status": "source_verified",
+        "checked_on": "2026-11-10",
+        "search_queries": [
+          "NIfTI-1 Test Data Sets minimal MNI152"
+        ],
+        "opened_urls": [
+          "https://nifti.nimh.nih.gov/nifti-1/data/"
+        ],
+        "methods": [
+          "web_search",
+          "page_open"
+        ],
+        "image_files_downloaded": false
+      }
+    }
+  ],
+  "coverage": {
+    "dental_cbct": [
+      {
+        "vendor": "Planmeca",
+        "dataset_ids": [],
+        "status": "gap",
+        "note": "Only out-of-scope knee projection data verified."
+      },
+      {
+        "vendor": "Carestream",
+        "dataset_ids": [],
+        "status": "gap",
+        "note": "Demo candidates lack sufficient sample-specific evidence."
+      },
+      {
+        "vendor": "Sirona / Sidexis / Galileos",
+        "dataset_ids": [],
+        "status": "gap",
+        "note": "No suitable source verified. Sidexis is software; no scanner is inferred from it."
+      },
+      {
+        "vendor": "Vatech",
+        "dataset_ids": [],
+        "status": "gap",
+        "note": "No suitable public DICOM source verified."
+      },
+      {
+        "vendor": "NewTom",
+        "dataset_ids": [
+          "dental-missing-teeth"
+        ],
+        "status": "covered",
+        "note": "VGi stated in the dataset paper."
+      },
+      {
+        "vendor": "i-CAT / KaVo",
+        "dataset_ids": [
+          "dental-missing-teeth"
+        ],
+        "status": "partial",
+        "note": "KaVo OP 3D Vision V17 verified; i-CAT-branded data not established."
+      },
+      {
+        "vendor": "Morita",
+        "dataset_ids": [],
+        "status": "gap",
+        "note": "Viewer demo candidate remains unverified."
+      },
+      {
+        "vendor": "Anatomage",
+        "dataset_ids": [],
+        "status": "gap",
+        "note": "Software vendor; no suitable standalone public DICOM source verified."
+      }
+    ],
+    "ct_mri": [
+      {
+        "vendor": "Siemens",
+        "dataset_ids": [
+          "ct-credence-phantom",
+          "mri-siemens-xa30"
+        ]
+      },
+      {
+        "vendor": "GE",
+        "dataset_ids": [
+          "ct-credence-phantom",
+          "mri-ge"
+        ]
+      },
+      {
+        "vendor": "Philips",
+        "dataset_ids": [
+          "ct-credence-phantom",
+          "ct-philips-gantry",
+          "mri-philips-enhanced"
+        ]
+      },
+      {
+        "vendor": "Canon / Toshiba",
+        "dataset_ids": [
+          "ct-credence-phantom",
+          "mri-canon"
+        ],
+        "note": "Toshiba-labelled CT; Canon-labelled MRI."
+      },
+      {
+        "vendor": "United Imaging",
+        "dataset_ids": [
+          "mri-united-imaging"
+        ]
+      }
+    ],
+    "format_tests": [
+      {
+        "name": "JPEG 2000",
+        "dataset_ids": [
+          "syntax-jpeg2000"
+        ]
+      },
+      {
+        "name": "HTJ2K",
+        "dataset_ids": [
+          "syntax-htj2k"
+        ],
+        "note": "UIDs .201 and .203 only; .202 not covered."
+      },
+      {
+        "name": "JPEG-LS",
+        "dataset_ids": [
+          "syntax-jpegls"
+        ],
+        "note": "Near-lossless only; lossless .80 not covered."
+      },
+      {
+        "name": "RLE",
+        "dataset_ids": [
+          "syntax-rle"
+        ]
+      },
+      {
+        "name": "Enhanced multi-frame",
+        "dataset_ids": [
+          "mri-siemens-xa30",
+          "mri-philips-enhanced"
+        ],
+        "note": "Object structure, not a transfer syntax."
+      },
+      {
+        "name": "NIfTI",
+        "dataset_ids": [
+          "nifti-minimal",
+          "nifti-mni152"
+        ]
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "planmeca-knee-projections",
+      "title": "Planmeca Viso G7 knee phantom",
+      "source_url": "https://zenodo.org/records/12722386",
+      "status": "excluded",
+      "source_opened": true,
+      "reason": "538.3 MB of MATLAB projection data from a knee phantom; not dental DICOM or NIfTI.",
+      "search_queries": [
+        "Planmeca demo datasets download"
+      ],
+      "checked_on": "2026-11-10",
+      "image_files_downloaded": false
+    },
+    {
+      "id": "carestream-demo",
+      "title": "360 Visualise CBCT demo scans",
+      "source_url": "https://360v.co.uk/which_cbct/",
+      "status": "unverified",
+      "source_opened": true,
+      "reason": "Scan ZIP links (206 MB, 188 MB, 220 MB) exist, but sample-specific vendor/model, DICOM format and de-identification are not established. Installer links are outside scope.",
+      "search_queries": [
+        "Carestream CBCT sample DICOM download"
+      ],
+      "checked_on": "2026-11-10",
+      "image_files_downloaded": false
+    },
+    {
+      "id": "morita-viewer-demo",
+      "title": "Morita One Volume Viewer demo dataset",
+      "source_url": "https://cavendishimaging.com/cbct-support/software-downloads/",
+      "status": "unverified",
+      "source_opened": true,
+      "reason": "A demo is listed under Morita Accuitomo, but standalone DICOM contents, privacy and reuse terms are not confirmed.",
+      "search_queries": [
+        "Morita Accuitomo DICOM demo dataset"
+      ],
+      "checked_on": "2026-11-10",
+      "image_files_downloaded": false
+    },
+    {
+      "id": "newtom-nnt-demo",
+      "title": "NNT demo dataset",
+      "source_url": "https://cavendishimaging.com/cbct-support/software-downloads/",
+      "status": "unverified",
+      "source_opened": true,
+      "reason": "Demo link exists, but standard DICOM contents, privacy and separation from proprietary viewer material are not confirmed.",
+      "search_queries": [
+        "NewTom NNT DICOM demo dataset"
+      ],
+      "checked_on": "2026-11-10",
+      "image_files_downloaded": false
+    },
+    {
+      "id": "medimodel-class3",
+      "title": "Class 3 malocclusion",
+      "source_url": "https://medimodel.com/sample-dicom-files/",
+      "detail_url": "https://medimodel.com/sample-dicom-files/class-3-malocclusion/",
+      "detail_page_opened": false,
+      "status": "unverified",
+      "source_opened": true,
+      "reason": "The publisher listing was opened, but the Class 3 malocclusion detail page could not be verified (timeout / HTTP 403). Sample-specific size, vendor, terms and registration remain unverified.",
+      "search_queries": [
+        "Medimodel Class 3 malocclusion DICOM"
+      ],
+      "checked_on": "2026-11-10",
+      "image_files_downloaded": false
+    }
+  ]
+}
